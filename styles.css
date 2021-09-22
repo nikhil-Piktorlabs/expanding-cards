@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  background: yellow;
+  display: grid;
+  height: 100vh;
+  grid-template: auto / repeat(4, auto);
+  grid-gap: 10px;
+}
+
+.grid__item {
+  background: tomato;
+}
+
+.grid__item--selected {
+  grid-column: span 2;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexbox__item {
+  flex: 1;
+  background: turquoise;
+  margin: 10px;
+}
+
+.flexbox__item--selected {
+  flex: 4;
+}
