@@ -3,33 +3,40 @@
   padding: 0;
 }
 
-.grid {
-  background: yellow;
-  display: grid;
+.container {
+  background: rgb(37, 19, 102);
+  display: flex;
   height: 100vh;
-  grid-template: auto / repeat(4, auto);
-  grid-gap: 10px;
+  justify-content: space-between;
+  padding: 0px 5px;
 }
 
-.grid__item {
-  background: tomato;
-}
-
-.grid__item--selected {
-  grid-column: span 2;
-}
-
-.flexbox {
+.column {
   display: flex;
   flex-direction: column;
-}
-
-.flexbox__item {
   flex: 1;
-  background: turquoise;
-  margin: 10px;
+  margin: 5px;
+  transition: flex 1s;
 }
 
-.flexbox__item--selected {
+.column--selected {
+  flex: 2;
+}
+
+.card {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  cursor: pointer;
+  flex: 1;
+  margin: 5px 0px;
+  transition: flex 1s;
+  z-index: 1;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.card--selected {
   flex: 4;
 }
